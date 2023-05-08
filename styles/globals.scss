@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(253, 253, 253);
+  background-color: #162233;
+}
+
+.heroBtn {
+  color: grey;
+  font-size: 12px;
+  padding: 5px 10px;
+  margin: 15px 5px;
+  border: 1px solid rgb(61, 61, 61);
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.heroBtn:hover {
+  border: 1px solid #44d434;
+}
+
+.header {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+}
+
+.element {
+  margin: auto;
+  font-size: 1.5rem;
+  font-weight: 300;
+  animation: lights 5s 750ms linear infinite;
+}
+
+@keyframes lights {
+  0% {
+    color: hsl(230, 40%, 80%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+
+  30% {
+    color: hsl(230, 80%, 90%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+
+  40% {
+    color: hsl(230, 100%, 95%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+
+  70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+
+  100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+}
+
+.rota {
+  animation: circle 50s infinite linear;
+}
+
+@keyframes circle {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(365deg);
+  }
+}
+
+.contactInput {
+  outline: none;
+  background-color: rgb(69, 70, 83);
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: 1px solid rgba(29, 34, 85, 0.726);
+  font-size: 18px;
+  color: antiquewhite;
+
+  &:hover {
+    border-bottom: 2px solid rgb(175, 196, 241);
+  }
+  &:focus {
+    border-bottom: 2px solid rgb(35, 100, 241);
+  }
+}
