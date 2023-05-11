@@ -61,7 +61,7 @@ function Contact() {
             placeholder="message"
             className="contactInput"
           />
-          <button className="bg-[#367ff5] py-5 px-10 rounded-md text-black font-bold">
+          <button className="bg-[#367ff5] py-5 px-10 rounded-md text-white font-bold">
             Send
           </button>
         </form>
