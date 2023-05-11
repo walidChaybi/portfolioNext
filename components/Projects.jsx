@@ -54,7 +54,7 @@ function Projects() {
           opacity: 1,
         }}
         transition={{
-          duration: 0.5,
+          duration: 0.4,
         }}
         className=" w-full flex flex-col "
       >
