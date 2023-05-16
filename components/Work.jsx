@@ -21,100 +21,73 @@ function Work() {
           className=" vertical-timeline-element--work"
           contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          date="2011 - present"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<FaHtml5 size={32} color="#ff5e00" />}
+          date="Sept 2021 - Mars 2022"
+          iconStyle={{ background: "white", color: "#fff" }}
+          icon={
+            <img src="https://hindubabynames.info/downloads/wp-content/themes/hbn_download/download/agriculture-companies/upl-ltd-logo.png" />
+          }
         >
-          <h3 className=" vertical-timeline-element-title">
-            Creative Director
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+          <h2 className=" vertical-timeline-element-title">
+            Assistant chef de projet EDI
+          </h2>
+          <h4 className="vertical-timeline-element-subtitle">Paris, France</h4>
           <p>
-            Creative Direction, User Experience, Visual Design, Project
-            Management, Team Leading
+            • Implémentation des nouveaux flux EDI Idoc SAP avec normes EDIFACT
+            pour les messages ORDERS, DESADV,
           </p>
+          <p>
+            • Réalisation des mapping de messages EDIFACT/Idoc SAP et validation
+            des Mapping de messages et flux,
+          </p>
+          <p>
+            • Création des procédures et formation des équipes métiers (ADV &
+            Supply) dans le suivi, l’identification des erreurs et leurs
+            résolutions,
+          </p>
+          <p>
+            • Création des procédures et formation des équipes métiers (ADV &
+            Supply) dans le suivi, l’identification des erreurs et leurs
+            résolutions,
+          </p>
+          <p>
+            • Gérer les tickets IT de premier niveau concernant les sujets SAP,
+          </p>
+          <p>• Participer activement au testing (UAT)</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2010 - 2011"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<FaHtml5 size={32} color="#ff5e00" />}
+          className=" vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          date="Déc 2015 - Aout 2019"
+          iconStyle={{ background: "green", color: "#fff" }}
+          icon={"Lafarge"}
         >
-          <h3 className="vertical-timeline-element-title">Art Director</h3>
+          <h2 className=" vertical-timeline-element-title">
+            Ingénieur Logistique & KeuUser SAP MM
+          </h2>
           <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
+            Casablanca, Maroc
           </h4>
           <p>
-            Creative Direction, User Experience, Visual Design, SEO, Online
-            Marketing
+            • Superviser les activités logistique (Approvisionnement, Stockage,
+            Planification, Développement Packaging, Administration des
+            ventes...)
           </p>
+          <p>• Élaborer et suivre le planning d'expédition, création des BL</p>
+          <p>
+            • Garantir la mise à jour des paramétrages SAP (Material, Vendor
+            Master)
+          </p>
+          <p>
+            • Planifier les besoins en composants à partir des prévisions de
+            vente
+          </p>
+          <p>
+            Participation à la rédaction du Blueprint et les spécifications
+            fonctionnelles
+          </p>
+          <p>• Rédaction de tests unitaires et fonctionnels</p>
         </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2008 - 2010"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<FaHtml5 size={32} color="#ff5e00" />}
-        >
-          <h3 className="vertical-timeline-element-title">Web Designer</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            Los Angeles, CA
-          </h4>
-          <p>User Experience, Visual Design</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2006 - 2008"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<FaHtml5 size={32} color="#ff5e00" />}
-        >
-          <h3 className="vertical-timeline-element-title">Web Designer</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
-          </h4>
-          <p>User Experience, Visual Design</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          date="April 2013"
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          icon={<FaHtml5 size={32} color="#ff5e00" />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Content Marketing for Web, Mobile and Social Media
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-          <p>Strategy, Social Media</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          date="November 2012"
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          icon={<FaHtml5 size={32} color="#ff5e00" />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Agile Development Scrum Master
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-          <p>Creative Direction, User Experience, Visual Design</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          date="2002 - 2006"
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          icon={<FaHtml5 size={32} color="#ff5e00" />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Bachelor of Science in Interactive Digital Media Visual Imaging
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            Bachelor Degree
-          </h4>
-          <p>Creative Direction, Visual Design</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
-          icon={<FaHtml5 size={32} color="#ff5e00" />}
-        />
       </VerticalTimeline>
     </div>
   )
