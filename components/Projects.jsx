@@ -73,7 +73,7 @@ function Projects() {
           name="Github Profils Viewer"
           link="https://github.chaybi.fr/"
           image="fithubscreen-min"
-          description="Un projet qui affiche les utilisateur "
+          description="Un projet qui affiche les profiles Github avec des details sur leurs reposotories et stacks qui utilisent dans leurs repos "
         />
         <ProjectSection
           name="Netflix Replica"
