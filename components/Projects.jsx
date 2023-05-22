@@ -67,7 +67,7 @@ function Projects() {
           name="Booking Replica"
           link="https://booking.chaybi.fr/"
           image="bookingscreen-min"
-          description="Une copie du siteweb Booking.com, je l'ai refait en utilisant ReactJS, React Router, HTML5, CSS, et quelques React Packages pour aider surtout sur le calendrier"
+          description="Une copie du siteweb Booking.com, je l'ai refait  en utilisant ReactJS, React Router, HTML5, CSS, et quelques React Packages pour aider surtout sur le calendrier"
         />
         <ProjectSection
           name="Github Profils Viewer"

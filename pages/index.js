@@ -13,6 +13,10 @@ export default function Home() {
   return (
     <div className="scrollbar scrollbar-track-gray-400 scrollbar-thumb-blue-900 h-screen overflow-x-hidden z-0 scroll-auto">
       <Head>
+        <meta property="og:title" content="Chaybi Walid's Portfolio" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.chaybi.com" />
+        <meta property="og:image" content="https://example.com/me.jpg" />
         <title>Chaybi walid</title>
       </Head>
       <Header />
