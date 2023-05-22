@@ -16,7 +16,10 @@ export default function Home() {
         <meta property="og:title" content="Chaybi Walid's Portfolio" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.chaybi.com" />
-        <meta property="og:image" content="https://example.com/me.jpg" />
+        <meta
+          property="og:image"
+          content="https://chaybi.com/_next/image?url=%2Fechaybi.png&w=256&q=75"
+        />
         <title>CHAYBI walid's Portfolio</title>
       </Head>
       <Header />
