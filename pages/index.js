@@ -10,6 +10,20 @@ import Projects from "@/components/Projects"
 import Contact from "@/components/Contact"
 
 export default function Home() {
+  const cursorHanler = () => {
+    if (typeof window !== "undefined") {
+      let cursor = document.querySelector(".cursor")
+      let cursor2 = document.querySelector(".cursor2")
+
+      document.addEventListener("mousemove", (e) => {
+        cursor.style.cssText =
+          cursor2.style.cssText = ` left: ${e.clientX}px; top: ${e.clientY}px;
+        `
+      })
+    }
+  }
+  cursorHanler()
+
   return (
     <div className="scrollbar scrollbar-track-gray-400 scrollbar-thumb-blue-900 h-screen overflow-x-hidden z-0 scroll-auto">
       <Head>
@@ -38,6 +52,8 @@ export default function Home() {
       <section id="contact">
         <Contact />
       </section>
+      <div className="cursor"></div>
+      <div className="cursor2"></div>
     </div>
   )
 }
