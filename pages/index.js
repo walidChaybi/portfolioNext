@@ -34,7 +34,7 @@ export default function Home() {
           property="og:image"
           content="https://chaybi.com/_next/image?url=%2Fechaybi.png&w=256&q=75"
         />
-        <title>CHAYBI walid's Portfolio</title>
+        <title>Chaybi walid's Portfolio</title>
       </Head>
       <Header />
       <section id="hero">
