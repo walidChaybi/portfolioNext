@@ -11,7 +11,7 @@ function Work() {
   return (
     <div className="w-full flex flex-col items-center relative">
       <div className="z-10 sticky top-8 mb-20">
-        <h3 className="element uppercase tracking-[20px] text-gray-500 text-3xl z-10">
+        <h3 className="text-md md:text-xl xl:text-3xl element uppercase tracking-[10px] text-gray-500  z-10 ">
           Experience
         </h3>
       </div>

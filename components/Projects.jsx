@@ -37,7 +37,7 @@ function Projects() {
   return (
     <div className=" relative max-w-full mt-20 h-auto flex flex-col text-left items-center ">
       <div className="z-10 sticky top-8 mb-20">
-        <h3 className="element uppercase tracking-[20px] text-gray-500 text-3xl z-10">
+        <h3 className="element uppercase tracking-[10px] text-gray-500 text-md md:text-xl xl:text-3xl z-10">
           Projects
         </h3>
       </div>

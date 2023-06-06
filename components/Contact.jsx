@@ -10,7 +10,7 @@ function Contact() {
   return (
     <div className="snap-start relative max-w-full overflow-hidden  mt-20 h-screen flex flex-col text-left items-center ">
       <div className="z-10 sticky top-8 mb-20">
-        <h3 className="element uppercase tracking-[20px] text-gray-500 text-3xl">
+        <h3 className="element uppercase tracking-[10px] text-gray-500 text-3xl">
           Contact
         </h3>
       </div>
