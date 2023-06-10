@@ -97,16 +97,12 @@ function Hero() {
         }}
         width={80}
         height={52}
-        className="absolute top-[200px] right-[20px]"
+        className="moon absolute top-[200px] right-[20px]"
         src="/moon.webp"
       />
+
       <BackgroundCircles />
-      {/*<GalaxySkills />*/}
-      {/* <div className="absolute top-[560px]">
-        <h2 className="text-sm uppercase text-gray-500 mb-10 tracking-[10px]">
-          Frontend Engineer
-        </h2>
-  </div>*/}
+
       <Image
         className="absolute rounded-full"
         src="/echaybi.png"

@@ -132,3 +132,52 @@ body {
     border-bottom: 2px solid rgb(35, 100, 241);
   }
 }
+
+.container {
+  width: 400px;
+  height: 400px;
+  background-image: url(../public/master-react-happy-face.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eyes {
+  position: absolute;
+  top: 95px;
+  left: 15px;
+}
+
+.eye1 {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  background-color: #00d8ff;
+  margin: 0 75px;
+}
+
+.eye2 {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  background-color: #e535ab;
+  margin: 0 75px;
+}
+.eye1:after,
+.eye2:after {
+  /*pupil*/
+  position: absolute;
+  bottom: 17px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  background: #fbfbfb;
+  border-radius: 50%;
+  content: " ";
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}

@@ -2,13 +2,37 @@ import { motion } from "framer-motion"
 import { Typewriter } from "react-simple-typewriter"
 
 function About() {
+  if (typeof window !== "undefined") {
+    document.querySelector("body").addEventListener("mousemove", function (e) {
+      let eye1 = document.querySelector(".eye1")
+      let eye2 = document.querySelector(".eye2")
+      let x = eye1.offsetLeft + 700 / 2
+      let y = eye1.offsetTop + 300 / 2
+      let x2 = eye2.offsetLeft + 300 / 2
+      let y2 = eye2.offsetTop + 300 / 2
+      let rad = Math.atan2(e.pageX - 2 * x, e.pageY - 2 * y)
+      let rad2 = Math.atan2(e.pageX - 2 * x2, e.pageY - 2 * y2)
+      let rot = rad * (180 / Math.PI) * -1 + 180
+      let rot2 = rad2 * (180 / Math.PI) * -1 + 180
+      eye1.style.transform = `rotate(${rot}deg)`
+      eye2.style.transform = `rotate(${rot2}deg)`
+    })
+  }
+
   return (
-    <div className="relative mt-16 flex flex-col items-center ">
-      <h3 className="element sticky top-8 text-md md:text-xl xl:text-3xl tracking-[10px] text-gray-500 z-10">
+    <div className=" relative mt-16 flex flex-col items-center ">
+      <h3 className=" element sticky top-8 text-md md:text-xl xl:text-3xl  tracking-[10px] text-gray-500 z-10">
         ABOUT
       </h3>
 
-      <span className="absolute top-[120px] text-2xl md:mt-0 xl:mt-0 font-bold md:text-4xl xl:text-4xl">
+      <div className="container">
+        <div className="eyes">
+          <div className="eye1"></div>
+          <div className="eye2"></div>
+        </div>
+      </div>
+
+      <span className="text-2xl md:mt-0 xl:mt-12 mb-8 font-bold md:text-4xl xl:text-4xl">
         <Typewriter
           words={[
             "🖐Hi, my name is Walid",
@@ -23,7 +47,7 @@ function About() {
         />
       </span>
 
-      <div className="max-w-7xl md:p-16 h-[900px] flex flex-col  items-center justify-evenly md:flex-row xl:flex-row">
+      <div className="max-w-7xl md:p-16  flex flex-col  items-center justify-evenly md:flex-row xl:flex-row">
         <motion.img
           className="mb-6 cursor-help md:mb-0 w-64 h-64 rounded-[100%] object-cover md:w-[300px] md:rounded-full md:h-[300px] xl:w-[400px] xl:h-[400px]"
           src="/walidchaybilife.webp"
