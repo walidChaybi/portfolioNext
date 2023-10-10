@@ -1,22 +1,25 @@
-import { motion } from "framer-motion"
-import { Typewriter } from "react-simple-typewriter"
+import { motion } from "framer-motion";
+import { Typewriter } from "react-simple-typewriter";
+import ThreeD from "./ThreeD";
 
 function About() {
+  // eyes movement func
   if (typeof window !== "undefined") {
     document.querySelector("body").addEventListener("mousemove", function (e) {
-      let eye1 = document.querySelector(".eye1")
-      let eye2 = document.querySelector(".eye2")
-      let x = eye1.offsetLeft + 700 / 2
-      let y = eye1.offsetTop + 300 / 2
-      let x2 = eye2.offsetLeft + 300 / 2
-      let y2 = eye2.offsetTop + 300 / 2
-      let rad = Math.atan2(e.pageX - 2 * x, e.pageY - 2 * y)
-      let rad2 = Math.atan2(e.pageX - 2 * x2, e.pageY - 2 * y2)
-      let rot = rad * (180 / Math.PI) * -1 + 180
-      let rot2 = rad2 * (180 / Math.PI) * -1 + 180
-      eye1.style.transform = `rotate(${rot}deg)`
-      eye2.style.transform = `rotate(${rot2}deg)`
-    })
+      let eye1 = document.querySelector(".eye1");
+      let eye2 = document.querySelector(".eye2");
+      let x = eye1.offsetLeft + 700 / 2;
+      let y = eye1.offsetTop + 300 / 2;
+      let x2 = eye2.offsetLeft + 300 / 2;
+      let y2 = eye2.offsetTop + 300 / 2;
+      let rad = Math.atan2(e.pageX - 2 * x, e.pageY - 2 * y);
+      let rad2 = Math.atan2(e.pageX - 2 * x2, e.pageY - 2 * y2);
+      let rot = rad * (180 / Math.PI) * -1 + 180;
+      let rot2 = rad2 * (180 / Math.PI) * -1 + 180;
+      console.log(eye1.style["background-color"]);
+      eye1.style.transform = `rotate(${rot}deg)`;
+      eye2.style.transform = `rotate(${rot2}deg)`;
+    });
   }
 
   return (
@@ -25,7 +28,7 @@ function About() {
         ABOUT
       </h3>
 
-      <div className="container">
+      <div className="happyface">
         <div className="eyes">
           <div className="eye1"></div>
           <div className="eye2"></div>
@@ -92,7 +95,7 @@ function About() {
         </motion.div>
       </div>
     </div>
-  )
+  );
 }
 
-export default About
+export default About;

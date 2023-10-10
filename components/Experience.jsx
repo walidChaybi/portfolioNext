@@ -1,5 +1,6 @@
-import { motion } from "framer-motion"
-import Work from "./Work"
+import { motion } from "framer-motion";
+import Work from "./Work";
+import ThreeD from "./ThreeD";
 
 function Experience() {
   return (
@@ -17,7 +18,7 @@ function Experience() {
     >
       <Work />
     </motion.div>
-  )
+  );
 }
 
-export default Experience
+export default Experience;

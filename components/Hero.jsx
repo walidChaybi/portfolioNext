@@ -1,4 +1,4 @@
-import { FaHtml5, FaGitSquare, FaReact, FaFigma } from "react-icons/fa"
+import { FaHtml5, FaGitSquare, FaReact, FaFigma } from "react-icons/fa";
 import {
   SiJavascript,
   SiCsswizardry,
@@ -7,11 +7,12 @@ import {
   SiTailwindcss,
   SiGraphql,
   SiJest,
-} from "react-icons/si"
-import { TbApi } from "react-icons/tb"
-import BackgroundCircles from "./BackgroundCircles"
-import Image from "next/image"
-import { animate, motion } from "framer-motion"
+} from "react-icons/si";
+import { TbApi } from "react-icons/tb";
+import BackgroundCircles from "./BackgroundCircles";
+import Image from "next/image";
+import { animate, motion } from "framer-motion";
+import ThreeD from "./ThreeD";
 
 const Skill = ({ logo, x, y }) => {
   return (
@@ -36,8 +37,8 @@ const Skill = ({ logo, x, y }) => {
     >
       {logo}
     </motion.div>
-  )
-}
+  );
+};
 
 function Hero() {
   return (
@@ -102,15 +103,11 @@ function Hero() {
       />
 
       <BackgroundCircles />
-
-      <Image
-        className="absolute rounded-full"
-        src="/echaybi.png"
-        width={150}
-        height={150}
-      />
+      <div className="absolute">
+        <ThreeD />
+      </div>
     </div>
-  )
+  );
 }
 
-export default Hero
+export default Hero;

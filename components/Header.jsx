@@ -1,7 +1,8 @@
-import Image from "next/image"
-import { SocialIcon } from "react-social-icons"
-import { motion } from "framer-motion"
-import Link from "next/link"
+import Image from "next/image";
+import { SocialIcon } from "react-social-icons";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import ThreeD from "./ThreeD";
 function Header() {
   return (
     <header className="header mx-auto max-w-7xl sticky top-0 flex justify-between p-5 items-center z-10">
@@ -44,11 +45,11 @@ function Header() {
       >
         <SocialIcon network="email" />
         <p className="ml-5 hidden md:inline-flex text-sm text-gray-400 ">
-          <Link href="#contact">CONTACT</Link>
+          <Link href="#contact"></Link>
         </p>
       </motion.div>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;
