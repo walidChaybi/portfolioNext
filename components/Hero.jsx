@@ -46,14 +46,18 @@ function Hero() {
       <div className="rota">
         <Skill logo=<FaHtml5 size={32} color="#ff5e00" /> x={12} y={28} />
       </div>
-      <Skill logo=<SiJavascript size={32} color="#ffdd01" /> x={-245} y={20} />
+      <div className="antirota">
+        <Skill logo=<SiJavascript size={32} color="#ffdd01" /> x={10} y={20} />
+      </div>
       <Skill
         logo=<SiCsswizardry size={32} color="#0191d9" />
         x={-120}
         y={150}
       />
       <Skill logo=<FaFigma size={32} color="pink" /> x={-110} y={-250} />
-      <Skill logo={<FaReact size={34} color="skyblue" />} x={-300} y={-290} />
+      <div className="antirota">
+        <Skill logo={<FaReact size={34} color="skyblue" />} x={-5} y={-290} />
+      </div>
       <Skill logo=<SiNextdotjs size={32} /> x={-400} y={190} />
       <Skill
         logo=<SiTailwindcss size={32} color="#05daed" />
@@ -98,7 +102,7 @@ function Hero() {
         }}
         width={80}
         height={52}
-        className="moon absolute top-[200px] right-[20px]"
+        className=" moon  absolute rota top-[200px] right-[20px]"
         src="/moon.webp"
       />
 

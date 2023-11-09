@@ -6,7 +6,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   color: rgb(253, 253, 253);
-  background-color: #162233;
+  background-color: #070809;
   box-sizing: border-box;
   .cursor {
     position: fixed;
@@ -104,7 +104,11 @@ body {
 }
 
 .rota {
-  animation: circle 100s infinite linear;
+  animation: circle 75s infinite linear;
+}
+
+.antirota {
+  animation: circle 75s infinite linear reverse;
 }
 
 @keyframes circle {

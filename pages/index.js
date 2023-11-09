@@ -9,6 +9,7 @@ import Work from "@/components/Work";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import { useEffect } from "react";
+import StarsCanvas from "@/components/StarBackground";
 
 export default function Home() {
   const cursorHanler = () => {
@@ -27,7 +28,7 @@ export default function Home() {
   cursorHanler();
 
   return (
-    <div className="scrollbar scrollbar-track-gray-400 scrollbar-thumb-blue-900 h-screen overflow-x-hidden z-0 scroll-auto">
+    <div className=" absolute scrollbar scrollbar-track-gray-800 scrollbar-thumb-blue-900 h-screen w-full overflow-x-hidden z-0 scroll-auto ">
       <Head>
         <meta property="og:title" content="Chaybi Walid's Portfolio" />
         <meta property="og:type" content="website" />
@@ -38,6 +39,7 @@ export default function Home() {
         />
         <title>Chaybi walid's Portfolio</title>
       </Head>
+      <StarsCanvas />
       <Header />
       <section id="hero">
         <Hero />

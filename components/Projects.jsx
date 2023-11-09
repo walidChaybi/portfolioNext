@@ -1,10 +1,10 @@
-import Image from "next/image"
-import { motion } from "framer-motion"
-import Link from "next/link"
+import Image from "next/image";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 const ProjectSection = ({ image, name, description, link }) => {
   return (
-    <div className="w-screen flex-shrink-0 flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-auto hover:bg-slate-800 duration-700">
+    <div className="w-screen flex-shrink-0 flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-auto hover:bg-gray-800/50 duration-700">
       <motion.img
         initial={{
           y: -300,
@@ -30,8 +30,8 @@ const ProjectSection = ({ image, name, description, link }) => {
         <p className="text-ls text-center md:text-left">{description}</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
 function Projects() {
   return (
@@ -84,7 +84,7 @@ function Projects() {
 
       {/*<div className="w-[2000px] absolute bg-[#003387]/10 left-[-100px] top-[250px] h-[500px] -skew-y-12" />*/}
     </div>
-  )
+  );
 }
 
-export default Projects
+export default Projects;

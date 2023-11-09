@@ -23,7 +23,7 @@ function About() {
   }
 
   return (
-    <div className=" relative mt-16 flex flex-col items-center ">
+    <div className=" relative mt-16 p-16 flex flex-col items-center ">
       <h3 className=" element sticky top-8 text-md md:text-xl xl:text-3xl  tracking-[10px] text-gray-500 z-10">
         ABOUT
       </h3>
