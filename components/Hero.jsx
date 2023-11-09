@@ -43,6 +43,17 @@ const Skill = ({ logo, x, y }) => {
 function Hero() {
   return (
     <div className=" snap-center h-screen relative  flex items-center justify-center text-center">
+      <div className="h-[750px] absolute top-[-30px] z-[-999] flex flex-col w-full">
+        <video
+          autoPlay
+          muted
+          loop
+          className="rotate-180 absolute top-[-340px] left-0 z-[1] w-full h-full object-cover"
+        >
+          <source src="/blackhole.webm" type="video/webm" />
+        </video>
+      </div>
+
       <div className="rota">
         <Skill logo=<FaHtml5 size={32} color="#ff5e00" /> x={12} y={28} />
       </div>

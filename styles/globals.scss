@@ -6,7 +6,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   color: rgb(253, 253, 253);
-  background-color: #162233;
+  background-color: #030014;
   box-sizing: border-box;
   .cursor {
     position: fixed;
@@ -180,4 +180,20 @@ body {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.vertical-timeline-element-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.vertical-timeline-element-icon:hover {
+  transform: scale(1.2);
+}
+
+.vertical-timeline-element-title {
+  color: rgb(27, 27, 82) !important;
+  font-weight: 900;
 }

@@ -1,11 +1,11 @@
 import {
   VerticalTimeline,
   VerticalTimelineElement,
-} from "react-vertical-timeline-component"
-import { FaHtml5 } from "react-icons/fa"
-import { motion } from "framer-motion"
+} from "react-vertical-timeline-component";
+import { FaHtml5 } from "react-icons/fa";
+import { motion } from "framer-motion";
 
-import "react-vertical-timeline-component/style.min.css"
+import "react-vertical-timeline-component/style.min.css";
 
 function Work() {
   return (
@@ -19,12 +19,12 @@ function Work() {
       <VerticalTimeline className=" text-slate-500">
         <VerticalTimelineElement
           className=" vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentStyle={{ background: "#2563eb", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
           date="Sept 2021 - Mars 2022"
           iconStyle={{ background: "white", color: "#fff" }}
           icon={
-            <img src="https://hindubabynames.info/downloads/wp-content/themes/hbn_download/download/agriculture-companies/upl-ltd-logo.png" />
+            <img src="https://companieslogo.com/img/orig/UPL.NS-08f44a06.png?t=1603312844" />
           }
         >
           <h2 className=" vertical-timeline-element-title">
@@ -56,11 +56,13 @@ function Work() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className=" vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          contentStyle={{ background: "#2563eb", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
           date="Déc 2015 - Aout 2019"
-          iconStyle={{ background: "green", color: "#fff" }}
-          icon={"Lafarge"}
+          iconStyle={{ background: "white", color: "#fff" }}
+          icon={
+            <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/a/ac/Lafarge.svg/320px-Lafarge.svg.png" />
+          }
         >
           <h2 className=" vertical-timeline-element-title">
             Ingénieur Logistique & KeuUser SAP MM
@@ -90,7 +92,7 @@ function Work() {
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>
-  )
+  );
 }
 
-export default Work
+export default Work;
