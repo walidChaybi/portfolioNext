@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
 import Head from "next/head";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -8,8 +6,6 @@ import Experience from "@/components/Experience";
 import Work from "@/components/Work";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
-import { useEffect } from "react";
-import StarsCanvas from "@/components/StarBackground";
 
 export default function Home() {
   const cursorHanler = () => {
@@ -39,7 +35,6 @@ export default function Home() {
         />
         <title>Chaybi walid's Portfolio</title>
       </Head>
-      <StarsCanvas />
       <Header />
       <section id="hero">
         <Hero />
