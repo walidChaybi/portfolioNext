@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@dilawchaybi/usehooks": "^1.0.3",
     "@heroicons/react": "^2.0.17",
     "@react-three/drei": "^9.66.3",
     "@react-three/fiber": "^8.14.5",
