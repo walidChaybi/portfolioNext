@@ -2,6 +2,20 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { FaRegCopy } from "react-icons/fa";
 import useCopyToClipBoard from "@dilawchaybi/usehooks/useCopyToClipBoard";
+import Link from "next/link";
+
+const hooks = [
+  "useCopyToClipBoard",
+  "useDebounce",
+  "useDefault",
+  "useDocumentTitle",
+  "useFavicon",
+  "useIdle",
+  "useList",
+  "useLockBodyScroll",
+  "usePrevious",
+  "useWindowSize",
+];
 
 const usehooks = () => {
   const [copiedText, copyToClipboard] = useCopyToClipBoard();
@@ -61,7 +75,7 @@ const usehooks = () => {
           width={320}
           height={320}
         />
-        <h1 className="text-2xl mt-6 w-[30rem] text-center">
+        <h1 className="text-xl md:text-2xl mt-6 w-[30rem] text-center">
           A collection of modern, server-safe React hooks – from Chaybi Walid -{" "}
           {time}
         </h1>
@@ -71,6 +85,15 @@ const usehooks = () => {
             <FaRegCopy /> {copied ? <span>copied</span> : <span>copy</span>}
           </button>
         </div>
+      </section>
+      <section className="hooks">
+        {hooks.map((hook) => (
+          <Link href={`/usehooks/${hook}`}>
+            <div key={hook} className="hook">
+              <p>{hook}</p>
+            </div>
+          </Link>
+        ))}
       </section>
     </div>
   );
