@@ -1,10 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap");
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Outfit", sans-serif;
   color: rgb(253, 253, 253);
   background-color: #030014;
   box-sizing: border-box;
@@ -205,7 +205,6 @@ body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   width: 100%;
-  height: 100vh;
   border: 20px solid #231f20;
 }
 
@@ -240,7 +239,7 @@ body {
   align-items: center;
   padding: 20px;
   margin-top: 30px;
-  background: #3e1d2e;
+  background: #131313;
   border-radius: 10px;
 }
 
@@ -277,4 +276,27 @@ body {
 .hook:hover {
   cursor: pointer;
   transform: scale(1.05);
+}
+
+.hook-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hook-description {
+  width: 850px;
+  background: #231f20;
+  padding: 0 60px;
+  border-radius: 25px;
+}
+
+.hook-description img {
+  position: relative;
+  top: -20px;
+  left: -100px;
+}
+
+tr {
+  display: grid;
+  grid-template-columns: 1fr 1fr 5fr;
 }

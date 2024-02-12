@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import { FaRegCopy } from "react-icons/fa";
 import useCopyToClipBoard from "@dilawchaybi/usehooks/useCopyToClipBoard";
 import Link from "next/link";
+import HooksHeader from "@/components/HooksHeader";
+import { FaChevronRight } from "react-icons/fa";
 
 const hooks = [
   "useCopyToClipBoard",
@@ -51,22 +53,7 @@ const usehooks = () => {
   return (
     <div className="wrapper">
       <div className="container">
-        <nav className="nav-container">
-          <Image
-            alt="walidchaybi"
-            className="logo"
-            src="/walidchaybi.png"
-            width={120}
-            height={120}
-          />
-          <Image
-            alt="github"
-            className="logo"
-            src="/icon-github.svg"
-            width={100}
-            height={100}
-          />
-        </nav>
+        <HooksHeader />
       </div>
       <section className="info">
         <Image
@@ -80,7 +67,10 @@ const usehooks = () => {
           {time}
         </h1>
         <div className="code">
-          <code>npm i @dilawchaybi/usehooks</code>
+          <div className="flex items-center gap-1">
+            <FaChevronRight color="yellow" />
+            <code>npm i @dilawchaybi/usehooks</code>
+          </div>
           <button className="btn-copy" onClick={handleCopy}>
             <FaRegCopy /> {copied ? <span>copied</span> : <span>copy</span>}
           </button>
