@@ -8,6 +8,7 @@ import Link from "next/link";
 import Table from "@/components/Table";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Hooks from "@/components/Hooks";
 
 const returnValue = [
   {
@@ -103,7 +104,7 @@ const usecopytoclipboard = () => {
           </div>
           <div>
             <h2 className="font-bold mt-8 mb-4 uppercase text-xl">demo</h2>
-            <div className="p-8 flex flex-col items-center bg-gray-700 rounded-xl">
+            <div className="p-8 flex flex-col items-center bg-[#131313] rounded-xl">
               <h3 className="uppercase text-2xl">usecopytoclipboard</h3>
               <p className="mb-8">Click the HASH to copy it</p>
               <pre>
@@ -121,6 +122,10 @@ const usecopytoclipboard = () => {
             </div>
           </div>
         </section>
+        <div className="m-4">
+          <h2 className="text-4xl">Other hooks</h2>
+          <Hooks />
+        </div>
       </main>
     </div>
   );

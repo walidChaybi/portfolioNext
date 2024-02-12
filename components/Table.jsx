@@ -1,6 +1,6 @@
 import React from "react";
 
-const Table = ({ data }) => {
+const Table = ({ data, name = "index" }) => {
   return (
     <>
       <div className="flex flex-col">
@@ -9,12 +9,12 @@ const Table = ({ data }) => {
             <div className="overflow-hidden">
               <table className="min-w-full">
                 <thead className="bg-indigo-400 border-b hover:bg-indigo-600">
-                  <tr className="">
+                  <tr className="items-start">
                     <th
                       scope="col"
                       className="text-sm font-medium text-gray-900 px-6 py-4 text-left"
                     >
-                      index
+                      {name}
                     </th>
                     <th
                       scope="col"
@@ -32,14 +32,14 @@ const Table = ({ data }) => {
                 </thead>
                 <tbody>
                   {data.map((tr) => (
-                    <tr className="bg-gray-100 border-b">
+                    <tr className="bg-gray-100 border-b ">
                       <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                         {tr.index}
                       </td>
-                      <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                      <td className="text-sm text-gray-900 font-light px-6 py-4 ">
                         {tr.type}
                       </td>
-                      <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                      <td className="text-sm text-gray-900 font-light px-6 py-4 ">
                         {tr.description}
                       </td>
                     </tr>
