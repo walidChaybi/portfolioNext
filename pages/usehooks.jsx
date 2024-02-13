@@ -5,6 +5,7 @@ import useCopyToClipBoard from "@dilawchaybi/usehooks/useCopyToClipBoard";
 import Link from "next/link";
 import HooksHeader from "@/components/HooksHeader";
 import { FaChevronRight } from "react-icons/fa";
+import Hooks from "@/components/Hooks";
 
 const hooks = [
   "useCopyToClipBoard",
@@ -84,6 +85,9 @@ const usehooks = () => {
             </div>
           </Link>
         ))}
+        <div className="m-12">
+          <Hooks />
+        </div>
       </section>
     </div>
   );
