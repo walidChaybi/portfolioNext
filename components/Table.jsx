@@ -3,11 +3,11 @@ import React from "react";
 const Table = ({ data, name = "index" }) => {
   return (
     <>
-      <div className="flex flex-col">
+      <div className="flex flex-col ">
         <div className="overflow-x-auto sm:mx-0.5 lg:mx-0.5">
           <div className="">
-            <div className="overflow-hidden">
-              <table className="min-w-full">
+            <div className="overflow-hidden ">
+              <table className="min-w-full ">
                 <thead className="bg-indigo-400 border-b hover:bg-indigo-600">
                   <tr className="items-start">
                     <th
