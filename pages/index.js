@@ -43,7 +43,7 @@ export default function Home() {
         <Hero />
       </section>
 
-      <section id="about">
+      <section id="about" className="py-14">
         <About />
       </section>
       <section>

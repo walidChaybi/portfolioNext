@@ -65,17 +65,6 @@ export default function ThreeD() {
             </Suspense>
           </div>
         </motion.div>
-        <motion.div
-          variants={{ hover: { scale: 0.85 }, press: { scale: 1.1 } }}
-          className="label flex items-center justify-center"
-        >
-          <Image
-            className=" absolute rounded-full"
-            src="/echaybi.png"
-            width={150}
-            height={150}
-          />
-        </motion.div>
       </motion.div>
     </MotionConfig>
   );

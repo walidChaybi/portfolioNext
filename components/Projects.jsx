@@ -1,6 +1,6 @@
-import Image from "next/image"
-import { motion } from "framer-motion"
-import Link from "next/link"
+import Image from "next/image";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 const ProjectSection = ({ image, name, description, link }) => {
   return (
@@ -30,8 +30,8 @@ const ProjectSection = ({ image, name, description, link }) => {
         <p className="text-ls text-center md:text-left">{description}</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
 function Projects() {
   return (
@@ -60,31 +60,31 @@ function Projects() {
         <ProjectSection
           name="App Méteo + Chatgpt 3.5"
           image="screenweatherapp-min"
-          link="https://weather.chaybi.fr/"
+          link="https://weather.chaybi.ovh/"
           description="Application de méteo qui affiche le température actuelle dans tous les pays du monde. J'ai utilisé la framework NextJS pour le developpement de cette app, HTML5, Tailwind CSS, Framer motion, Sanity.io"
         />
         <ProjectSection
           name="Booking Replica"
-          link="https://booking.chaybi.fr/"
+          link="https://booking.chaybi.ovh/"
           image="bookingscreen-min"
           description="Une copie du siteweb Booking.com, je l'ai refait  en utilisant ReactJS, React Router, HTML5, CSS, et quelques React Packages pour aider surtout sur le calendrier"
         />
         <ProjectSection
           name="Github Profils Viewer"
-          link="https://github.chaybi.fr/"
+          link="https://github.chaybi.ovh/"
           image="fithubscreen-min"
           description="Un projet qui affiche les profiles Github avec des details sur leurs reposotories et stacks qui utilisent dans leurs repos "
         />
         <ProjectSection
           name="Netflix Replica"
-          link="http://netflix.chaybi.fr/"
+          link="http://netflix.chaybi.ovh/"
           image="dilawflix-min"
         />
       </motion.div>
 
       {/*<div className="w-[2000px] absolute bg-[#003387]/10 left-[-100px] top-[250px] h-[500px] -skew-y-12" />*/}
     </div>
-  )
+  );
 }
 
-export default Projects
+export default Projects;
