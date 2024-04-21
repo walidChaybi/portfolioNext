@@ -7,11 +7,11 @@ const ProjectSection = ({ image, name, description, link }) => {
     <div className="w-screen flex-shrink-0 flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-auto hover:bg-slate-800 duration-700">
       <motion.img
         initial={{
-          y: -300,
-          opacity: 0,
+          y: -100,
+          opacity: 0.5,
         }}
         transition={{
-          duration: 1,
+          duration: 0.3,
         }}
         whileInView={{
           opacity: 1,
@@ -58,6 +58,18 @@ function Projects() {
       >
         {/*Projects Div*/}
         <ProjectSection
+          name="IconWizard"
+          image="iconwizard"
+          link="https://iconwizard.io/"
+          description="Application qui permet de créer des icones et logo en utilisant API REPLICATE, j'ai utilisé Stack T3 NextJS,  HTML5, CSS, Tailwind, Prisma, Firebase..."
+        />
+        <ProjectSection
+          name="Code to Png"
+          image="codetopng"
+          link="https://codetopng.chaybi.ovh/"
+          description="Application qui convertit le code source en image PNG, j'ai utilisé ReactJS, HTML5, CSS, et quelques packages React pour aider sur la conversion de code en image"
+        />
+        <ProjectSection
           name="App Méteo + Chatgpt 3.5"
           image="screenweatherapp-min"
           link="https://weather.chaybi.ovh/"
@@ -74,11 +86,6 @@ function Projects() {
           link="https://github.chaybi.ovh/"
           image="fithubscreen-min"
           description="Un projet qui affiche les profiles Github avec des details sur leurs reposotories et stacks qui utilisent dans leurs repos "
-        />
-        <ProjectSection
-          name="Netflix Replica"
-          link="http://netflix.chaybi.ovh/"
-          image="dilawflix-min"
         />
       </motion.div>
 
