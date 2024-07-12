@@ -1,10 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const HooksHeader = () => {
   return (
-    <nav className="nav-container">
+    <nav className="w-full flex justify-between">
       <Link href="/">
         <Image
           alt="walidchaybi"

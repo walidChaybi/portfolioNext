@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { FaRegCopy } from "react-icons/fa";
@@ -52,7 +54,7 @@ const usehooks = () => {
   }, [time]);
 
   return (
-    <div className="wrapper">
+    <div className="flex flex-col justify-center items-center">
       <div className="container">
         <HooksHeader />
       </div>

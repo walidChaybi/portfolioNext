@@ -18,6 +18,51 @@ function Work() {
 
       <VerticalTimeline className=" text-slate-500">
         <VerticalTimelineElement
+          className=" vertical-timeline-element--work "
+          contentStyle={{ background: "#2563eb", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          date="Sept 2021 - Mars 2022"
+          iconStyle={{ background: "white", color: "#fff" }}
+          icon={<img className="rounded-full" src="codeur.jpg" />}
+        >
+          <h2 className=" vertical-timeline-element-title">
+            Développeur React Frontend
+          </h2>
+          <h4 className="vertical-timeline-element-subtitle">Paris, France</h4>
+          <p>
+            • Participer aux cérémonies Agiles (cérémonie fin sprint, daily,
+            backlog, refinement)
+          </p>
+          <p>• Analyser les besoins et les spécifications techniques</p>
+          <p>
+            • Développer les interfaces utilisateur avec Next.js et TypeScript,
+          </p>
+          <p>
+            • Implémenter des tests avec Jest et React Testing Library,
+            entraînant une augmentation du code coverage à 55%, et
+            automatisation du déploiement avec Jenkins et Docker.
+          </p>
+          <p>
+            • Recommander de nouvelles technologies et outils, ce qui a conduit
+            à l'adoption de Nextjs pour une nouvelle application web, entraînant
+            une augmentation de 25% de l'engagement des utilisateurs et une
+            diminution de 20% du taux de rebond.
+          </p>
+          <p>
+            • Réduire le temps de chargement initial de 2,5 seconde en utilisant
+            Lazy Loading et Code Splitting,
+          </p>
+          <p>
+            • Intégrer Apollo Client et GraphQL, ce qui a entraîné une réduction
+            de 50 % des appels API et du temps de réponse,
+          </p>
+          <p>
+            • Rédiger et maintenir la documentation technique, assurant un
+            transfert de connaissances fluide et une collaboration efficace
+            entre les membres de l'équipe
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
           className=" vertical-timeline-element--work"
           contentStyle={{ background: "#2563eb", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}

@@ -1,30 +1,30 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
+"use client";
+
 import Head from "next/head";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
-import Work from "@/components/Work";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import { useEffect } from "react";
 
 export default function Home() {
-  const cursorHanler = () => {
-    if (typeof window !== "undefined") {
-      let cursor = document.querySelector(".cursor");
-      let cursor2 = document.querySelector(".cursor2");
+  useEffect(() => {
+    const cursorHanler = () => {
+      if (typeof window !== "undefined") {
+        let cursor = document.querySelector(".cursor");
+        let cursor2 = document.querySelector(".cursor2");
 
-      document.addEventListener("mousemove", (e) => {
-        cursor.style.cssText =
-          cursor2.style.cssText = ` left: ${e.clientX}px; top: ${e.clientY}px;
-        `;
-      });
-    }
-  };
+        document.addEventListener("mousemove", (e) => {
+          cursor.style.cssText =
+            cursor2.style.cssText = ` left: ${e.clientX}px; top: ${e.clientY}px;`;
+        });
+      }
+    };
 
-  cursorHanler();
+    cursorHanler();
+  }, []);
 
   return (
     <div className="scrollbar scrollbar-track-gray-400 scrollbar-thumb-blue-900 h-screen overflow-x-hidden z-0 scroll-auto">
