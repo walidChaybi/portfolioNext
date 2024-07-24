@@ -73,31 +73,29 @@ function Work() {
           }
         >
           <h2 className=" vertical-timeline-element-title">
-            Assistant chef de projet EDI
+            Développeur Frontend
           </h2>
           <h4 className="vertical-timeline-element-subtitle">Paris, France</h4>
           <p>
-            • Implémentation des nouveaux flux EDI Idoc SAP avec normes EDIFACT
-            pour les messages ORDERS, DESADV,
+            • Développer des composants UI réutilisables en utilisant
+            React/Javascript CSS/HTML
           </p>
           <p>
-            • Réalisation des mapping de messages EDIFACT/Idoc SAP et validation
-            des Mapping de messages et flux,
+            • Analyser et traduire les exigences des utilisateurs en solutions
+            techniques
           </p>
           <p>
-            • Création des procédures et formation des équipes métiers (ADV &
-            Supply) dans le suivi, l’identification des erreurs et leurs
-            résolutions,
+            • Collaborer avec les équipes back-end pour intégrer les API et les
+            services web
           </p>
           <p>
-            • Création des procédures et formation des équipes métiers (ADV &
-            Supply) dans le suivi, l’identification des erreurs et leurs
-            résolutions,
+            • Formation et support des utilisateurs finaux sur les nouvelles
+            applications et fonctionnalités
           </p>
           <p>
-            • Gérer les tickets IT de premier niveau concernant les sujets SAP,
+            • Participer activement au Testing (Tests unitaires, Tests e2e) avec
+            Jest et React Testing Library
           </p>
-          <p>• Participer activement au testing (UAT)</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className=" vertical-timeline-element--work"

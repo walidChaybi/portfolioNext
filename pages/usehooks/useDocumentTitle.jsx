@@ -12,6 +12,7 @@ import "prismjs/components/prism-clike";
 import "prismjs/components/prism-javascript";
 import "prismjs/themes/prism.css";
 import Editor from "react-simple-code-editor";
+import useDocumentTitle from "@dilawchaybi/usehooks/useDocumentTitle";
 
 const parameters = [
   {
@@ -67,6 +68,8 @@ export default function App() {
       window.clearTimeout(id);
     };
   }, [copied]);
+
+  useDocumentTitle("useDocumentTitle");
 
   return (
     <div className="wrapper">
